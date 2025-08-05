@@ -1,0 +1,29 @@
+{
+  "name": "ai-productivity-journal",
+  "version": "1.0.0",
+  "description": "AI-powered productivity journal that transforms mental clutter into actionable plans",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "build": "wrangler build",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "wrangler d1 migrations apply",
+    "db:studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "@fiberplane/hono": "^0.5.0",
+    "drizzle-orm": "^0.33.0",
+    "hono": "^4.0.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241106.0",
+    "@types/node": "^22.0.0",
+    "drizzle-kit": "^0.24.0",
+    "typescript": "^5.0.0",
+    "wrangler": "^3.78.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
