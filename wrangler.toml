@@ -1,0 +1,23 @@
+name = "ai-productivity-journal"
+main = "src/index.ts"
+compatibility_date = "2024-11-06"
+compatibility_flags = ["nodejs_compat"]
+[env.production]
+name = "ai-productivity-journal"
+[[d1_databases]]
+binding = "DB"
+database_name = "ai-productivity-journal-db"
+database_id = "your-database-id-here"
+migrations_dir = "drizzle"
+[ai]
+binding = "AI"
+[vars]
+NODE_ENV = "production"
+# Optional: If you need R2 storage
+# [[r2_buckets]]
+# binding = "R2"
+# bucket_name = "ai-productivity-journal-storage"
+# Optional: If you need KV storage
+# [[kv_namespaces]]
+# binding = "KV"
+# id = "your-kv-namespace-id"
